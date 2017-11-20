@@ -5,8 +5,11 @@
 <hibernate-configuration>
     <session-factory>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/accesodatos2</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/adat_ud2_a04_cartelera1</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <mapping resource="Modelo/Actores.hbm.xml" />
+        <mapping resource="Modelo/Peliculas.hbm.xml" />
+        <mapping resource="Modelo/Reparto.hbm.xml" />
     </session-factory>
 </hibernate-configuration>
